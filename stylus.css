@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  background: #87cefa;
+}
+
+.container {
+  background: #131723;
+  color: white;
+  padding: 25px;
+  height: 280px;
+  width: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.timer {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0px 20px 0px;
+}
+
+.timer span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.timer .min-seconds {
+  font-size: 15px;
+  position: relative;
+  top: -8px;
+  color: #87cefa;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  color: #87cefa;
+  border: solid 1px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+
+.buttons button:hover {
+  background-color: #87cefa;
+  color: #131723;
+}
+
+.stop,
+.lap {
+  display: none;
+}
+
+.lap-container {
+  margin: 30px 0px;
+}
+
+.lap-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #87cefa solid 1px;
+  margin: 15px 0px;
+}
+
+.lapNum {
+  color: #87cefa;
+  padding-bottom: 5px;
+}
+
+.lapTimer {
+  padding-bottom: 5px;
+}

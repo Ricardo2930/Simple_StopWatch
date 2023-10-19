@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylus.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h2 class="header-title">
+          <i class="fa-solid fa-stopwatch"></i> Stopwatch
+        </h2>
+      </header>
+
+      <section class="timer">
+        <span class="hours">00</span>: <span class="minutes">00</span>:
+        <span class="seconds">00</span>.
+        <span class="min-seconds">00</span>
+      </section>
+
+      <section class="buttons">
+        <button class="lap">
+          <i class="fa-solid fa-stopwatch-20"></i> Lap
+        </button>
+        <button class="stop"><i class="fa-solid fa-stop"></i> Stop</button>
+        <button class="reset">
+          <i class="fa-solid fa-arrow-rotate-left"></i> Reset
+        </button>
+        <button class="start"><i class="fa-solid fa-play"></i> Start</button>
+      </section>
+
+      <article class="lap-container"></article>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>
